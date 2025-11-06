@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 120px 40px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 17px;
+            color: #666;
+            margin-bottom: 80px;
+        }
+
+        .intro {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 120px;
+        }
+
+        .intro p {
+            margin-bottom: 24px;
+        }
+
+        .intro a {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: #ccc;
+            text-underline-offset: 3px;
+            transition: text-decoration-color 0.2s;
+        }
+
+        .intro a:hover {
+            text-decoration-color: #666;
+        }
+
+        .links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 120px;
+        }
+
+        .chip {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #f5f5f5;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .chip:hover {
+            background: #e5e5e5;
+            transform: translateY(-1px);
+        }
+
+        section {
+            margin-bottom: 120px;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #999;
+            margin-bottom: 40px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 20px;
+            font-size: 17px;
+            padding: 12px 16px;
+            margin-left: -16px;
+            margin-right: -16px;
+            border-radius: 8px;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .item:hover {
+            background: #f5f5f5;
+            transform: translateX(4px);
+        }
+
+        .item-title {
+            color: #1a1a1a;
+        }
+
+        .item-date {
+            color: #999;
+            font-size: 15px;
+            white-space: nowrap;
+            margin-left: 20px;
+        }
+
+        .projects {
+            display: grid;
+            gap: 60px;
+        }
+
+        .project {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-image {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            background: #f5f5f5;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover .project-image {
+            transform: scale(0.98);
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-title {
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .project-description {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 120px;
+            padding-top: 40px;
+            border-top: 1px solid #e5e5e5;
+            display: flex;
+            gap: 24px;
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 80px 24px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 60px;
+            }
+
+            .intro {
+                font-size: 16px;
+                margin-bottom: 80px;
+            }
+
+            .links {
+                margin-bottom: 80px;
+            }
+
+            section {
+                margin-bottom: 80px;
+            }
+
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 24px;
+            }
+
+            .item-date {
+                margin-left: 0;
+                margin-top: 4px;
+            }
+
+            footer {
+                margin-top: 80px;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Onur Ata Saritas</h1>
+            <p class="subtitle">Software Engineer</p>
+        </header>
+
+        <div class="intro">
+            <p>merhaba! i'm onur ata, a software engineer based in berlin. </p>
+            <p>i've spent close to a decade building software at every level, from writing GPU shaders for Oculus Quest (the first one) to owning entire products end-to-end. </p>
+            <p>working across layers taught me to have a holistic approach to software. i now design and maintain web products and make games.</p>
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/ata-o" class="chip">GitHub</a>
+            <a href="https://linkedin.com/in/onuratasaritas" class="chip">LinkedIn</a>
+            <a href="https://leetcode.com/u/onuratasaritas/" class="chip">LeetCode</a>
+            <a href="https://onuratasaritas.itch.io" class="chip">itch.io</a>
+        </div>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="item">
+                <span class="item-title">Delivery Hero SE - Berlin</span>
+                <span class="item-date">2024 - now</span>
+            </div>
+            <div class="item">
+                <span class="item-title">Delivery Hero SE - Istanbul</span>
+                <span class="item-date">2021 - 2024</span>
+            </div>
+            <div class="item">
+                <span class="item-title">BITES Defence & Aerospace</span>
+                <span class="item-date">2019 - 2021</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <a href="#" class="project">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?w=800&h=600&fit=crop" alt="Project One">
+                    </div>
+                    <div class="project-title">Joker - Sponsored Deals</div>
+                    <div class="project-description">An AdTech & SaaS product built from scratch in Türkiye and scaled globally as “Global Joker,” now serving 50+ markets under localized brand names (Yemeksepeti, Talabat, Foodpanda, PedidosYa).
+                        - Led global rollout across LATAM, APAC, and MENA regions, ensuring localization, seamless platform integration, and scalability across multiple Delivery Hero branches.
+                        - Delivered measurable impact through continuous A/B testing and experimentation, achieving conversion rate uplifts of up to +348% and contributing significantly to Delivery Hero’s AdTech revenue growth.
+                        - Collaborated cross-functionally with engineering, data science, design, and regional teams to align product strategy with business goals and ensure smooth adoption at scale.
+                    </div>
+                </a>
+
+                <a href="#" class="project">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=800&h=600&fit=crop" alt="Project Two">
+                    </div>
+                    <div class="project-title">Project Two</div>
+                    <div class="project-description">Another project with a simple explanation of its purpose and impact.</div>
+                </a>
+
+                <a href="#" class="project">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1618477460925-c702c61e0b0c?w=800&h=600&fit=crop" alt="Project Three">
+                    </div>
+                    <div class="project-title">Project Three</div>
+                    <div class="project-description">A third project showcasing your work and capabilities.</div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://twitter.com/yourusername">Twitter</a>
+        </footer>
+    </div>
+</body>
+</html>
