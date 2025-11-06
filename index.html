@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
+    <title>onur ata</title>
     <style>
         * {
             margin: 0;
@@ -127,7 +127,8 @@
 
         .projects {
             display: grid;
-            gap: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
         }
 
         .project {
@@ -166,6 +167,15 @@
             font-size: 15px;
             color: #666;
             line-height: 1.6;
+        }
+
+        .project-description ul {
+            margin-top: 12px;
+            padding-left: 20px;
+        }
+
+        .project-description li {
+            margin-bottom: 6px;
         }
 
         footer {
@@ -273,37 +283,48 @@
             <div class="projects">
                 <a href="#" class="project">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?w=800&h=600&fit=crop" alt="Project One">
+                        <img src="./joker-2.jpg?w=800&h=600&fit=crop" alt="Joker">
                     </div>
                     <div class="project-title">Joker - Sponsored Deals</div>
-                    <div class="project-description">An AdTech & SaaS product built from scratch in Türkiye and scaled globally as “Global Joker,” now serving 50+ markets under localized brand names (Yemeksepeti, Talabat, Foodpanda, PedidosYa).
-                        - Led global rollout across LATAM, APAC, and MENA regions, ensuring localization, seamless platform integration, and scalability across multiple Delivery Hero branches.
-                        - Delivered measurable impact through continuous A/B testing and experimentation, achieving conversion rate uplifts of up to +348% and contributing significantly to Delivery Hero’s AdTech revenue growth.
-                        - Collaborated cross-functionally with engineering, data science, design, and regional teams to align product strategy with business goals and ensure smooth adoption at scale.
+                    <div class="project-description">
+                        An AdTech & SaaS product built from scratch in Türkiye and scaled globally as “Global Joker,” now serving 50+ markets under localized brand names (Yemeksepeti, Talabat, Foodpanda, PedidosYa).
+                        <ul>
+                            <li>Built backend APIs in Golang, .NET, and Python handling high-throughput AdTech and user behavior data.</li>
+                            <li>Led backend rewrite for Joker\’s core service in Golang on GKE, reducing p99 latency by 70%.</li>
+                            <li>Contributed to frontend components using React and Angular, Launched in-house A/B Testing SDK with tracking and event validation logic, increasing revenue 87% YoY.</li>
+                            <li>Collaborated cross-functionally with engineering, data science, design, and regional teams to align product strategy with business goals and ensure smooth adoption at scale.</li>
+                        </ul>
                     </div>
+                    
                 </a>
 
-                <a href="#" class="project">
+                <a href="https://bizbize.live" class="project">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=800&h=600&fit=crop" alt="Project Two">
+                        <img src="./xpermeet-1.jpg?w=800&h=600&fit=crop" alt="BizBize">
                     </div>
-                    <div class="project-title">Project Two</div>
-                    <div class="project-description">Another project with a simple explanation of its purpose and impact.</div>
-                </a>
-
-                <a href="#" class="project">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1618477460925-c702c61e0b0c?w=800&h=600&fit=crop" alt="Project Three">
+                    <div class="project-title">BizBize</div>
+                    <div class="project-description">BizBize is a video conferencing and webinar platform, developed by the Innovation team in BITES Defence & Aerospace where i was working as an R&D Engineer.
+                        <ul>
+                            <li>
+                                Built microservices in Java, gRPC, .NET Core, and Python for secure communication systems
+                            </li>
+                            <li>
+                                Owned end-to-end development of BizBize’s core video conferencing service, handling real-time video/audio streaming, screen sharing, and chat functionalities using WebRTC.
+                            </li>
+                            <li>
+                                Made POCs and implemented features like webinars, whiteboarding, secure file sharing and encrypted meeting modes
+                            </li>
+                            <li>
+                                50K concurrent users during peak usage, adopted by various government agencies and enterprises for secure communications.
+                            </li>
+                        </ul>
                     </div>
-                    <div class="project-title">Project Three</div>
-                    <div class="project-description">A third project showcasing your work and capabilities.</div>
                 </a>
             </div>
         </section>
 
         <footer>
-            <a href="mailto:your.email@example.com">Email</a>
-            <a href="https://twitter.com/yourusername">Twitter</a>
+            <a href="mailto:onuratasaritas@gmail.com">Email</a>
         </footer>
     </div>
 </body>
