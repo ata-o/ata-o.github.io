@@ -20,7 +20,7 @@ header_pages:
 
 footer: 'find me on <a href="https://github.com/ata-o" class="chip">github</a>, <a href="https://linkedin.com/in/onuratasaritas" class="chip">linkedin</a>, <a href="https://leetcode.com/u/onuratasaritas/" class="chip">leetcode</a>, <a href="https://onuratasaritas.itch.io" class="chip">itch.io</a>'
 # Theme options
-style: light # dark (default) or light or hacker
+style: nord # dark (default) or light or hacker
 # listen_for_clients_preferred_style: true # true or false (default)
 
 # Fonts
