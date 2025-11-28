@@ -5,15 +5,22 @@
 #  - about.md
 
 #footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
-title: onur ata
+title: /onurata
 description: ""
 url: "https://onur.is-a.dev"
 baseurl: ""
 plugins:
   - jekyll-seo-tag
 
+header_pages:
+  - index.md
+  - experience.md
+  - projects.md
+  - contact.md
+
+footer: 'find me on <a href="https://github.com/ata-o" class="chip">github</a>, <a href="https://linkedin.com/in/onuratasaritas" class="chip">linkedin</a>, <a href="https://leetcode.com/u/onuratasaritas/" class="chip">leetcode</a>, <a href="https://onuratasaritas.itch.io" class="chip">itch.io</a>'
 # Theme options
-# style: dark # dark (default) or light or hacker
+style: light # dark (default) or light or hacker
 # listen_for_clients_preferred_style: true # true or false (default)
 
 # Fonts
@@ -35,3 +42,5 @@ plugins:
 #
 # # Extend CSP to allow your tracker sources (script-src/connect-src/img-src as needed)
 # # csp_extra: "script-src 'self' https://analytics.example.com; connect-src 'self' https://analytics.example.com; img-src 'self' https://analytics.example.com;"
+markdown: kramdown
+remote_theme: b2a3e8/jekyll-theme-console
