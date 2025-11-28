@@ -37,7 +37,9 @@ permalink: /projects
       <li>Created pixel art sprites and sound effects within platform limitations.</li>
     </ul>
     <p class="tech-stack"><strong>Tech Stack:</strong> PICO-8, Lua</p>
-    <p class="github-link"><a href="https://github.com/ata-o/shmup" target="_blank">View on GitHub</a></p>
+    <p class="github-link"><a href="https://onur.is-a.dev/shmup/web/shmup.html">Play on your browser!</a></p>
+    <p class="github-link"><a href="https://github.com/ata-o/shmup" target="_blank">View Source on GitHub</a></p>
+    
 </div>
 </div>
 
