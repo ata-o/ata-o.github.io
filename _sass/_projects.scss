@@ -1,0 +1,61 @@
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: visible; // ensures text wraps and no scrollbars
+
+  // Header / title section
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    cursor: pointer; // if you want click-to-toggle images
+  }
+
+  // Text content
+  p, ul {
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
+    word-wrap: break-word; // wrap long words
+  }
+
+  // Collapsible image section at the bottom
+  .project-images {
+    display: none; // collapsed by default
+    flex-direction: column; // stack images vertically
+    gap: 1rem;
+
+    .project-image {
+      width: 100%;
+      max-height: 400px; // caps very tall screenshots
+      object-fit: cover; // crops images nicely
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+    }
+  }
+
+  // Optional: hover effect for the card itself
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+}
+
+// Optional: responsive tweaks for small screens
+@media (max-width: 768px) {
+  .project-card {
+    padding: 0.75rem;
+
+    .project-images {
+      .project-image {
+        max-height: 300px;
+      }
+    }
+  }
+}
