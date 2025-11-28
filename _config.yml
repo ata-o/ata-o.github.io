@@ -14,9 +14,9 @@ plugins:
 
 header_pages:
   - index.md
-  - experience.md
+#  - experience.md
   - projects.md
-  - contact.md
+#  - contact.md
 
 footer: 'find me on <a href="https://github.com/ata-o" class="chip">github</a>, <a href="https://linkedin.com/in/onuratasaritas" class="chip">linkedin</a>, <a href="https://leetcode.com/u/onuratasaritas/" class="chip">leetcode</a>, <a href="https://onuratasaritas.itch.io" class="chip">itch.io</a>'
 # Theme options
